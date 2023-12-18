@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Help Desk</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Your College Logo</div>
+    <ul>
+      <li><a href="#" onclick="showDashboard()">Dashboard</a></li>
+      <li><a href="#" onclick="showInquire()">Inquire</a></li>
+      <li><a href="#" onclick="showFAQ()">FAQs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="page">
+    <h1>Welcome to Student Help Desk</h1>
+    <p>Brief information about the website.</p>
+    <button id="writeQueryBtn" onclick="showInquire()">Write a Query</button>
+  </div>
+
+  <!-- Inquire -->
+  <div id="inquire" class="page">
+    <h1>Write Your Query</h1>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="rollNumber">Your Roll Number:</label>
+      <input type="text" id="rollNumber" name="rollNumber" required>
+
+      <label for="query">Write Your Query:</label>
+      <textarea id="query" name="query" rows="4" required></textarea>
+
+      <button type="submit">Submit Query</button>
+    </form>
+  </div>
+
+  <!-- FAQs -->
+  <div id="faqs" class="page">
+    <h1>Frequently Asked Questions</h1>
+    <!-- Add your FAQ content here -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>Contact Information: Your Contact Details</div>
+    <img src="college-blueprint.jpg" alt="College Blueprint">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
