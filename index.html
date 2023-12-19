@@ -10,18 +10,25 @@
 
   <!-- Navbar -->
   <nav>
-    <div class="logo">Your College Logo</div>
+    
+    <div class="logo">
+      <a href='https://postimages.org/' target='_blank'>
+        <img src='https://i.postimg.cc/8PjwrZFr/pic1.jpg' id="log" border='0' alt='logo-300x-300-2'/>
+        
+      </a>
+      <h2>BVC ENGINEERING COLLEGE ODALAREVU (BVCEC)</h2>
+    </div>
     <ul>
-      <li><a href="#" onclick="showDashboard()">Dashboard</a></li>
-      <li><a href="#" onclick="showInquire()">Inquire</a></li>
-      <li><a href="#" onclick="showFAQ()">FAQs</a></li>
+      <li><a href="#" name="Dashboard" onclick="showDashboard()">Dashboard</a></li>
+      <li><a href="#"  name="Inquire" onclick="showInquire()">Inquire</a></li>
+      <li><a href="#" name="FAQ" onclick="showFAQ()">FAQs</a></li>
     </ul>
   </nav>
 
   <!-- Dashboard -->
   <div id="dashboard" class="page">
     <h1>Welcome to Student Help Desk</h1>
-    <p>Brief information about the website.</p>
+    <p>Here is the place where you could post your doubts and get the solution </p>
     <button id="writeQueryBtn" onclick="showInquire()">Write a Query</button>
   </div>
 
@@ -55,7 +62,7 @@
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="foot">
     <div>Contact Information: Your Contact Details</div>
     <img src="college-blueprint.jpg" alt="College Blueprint">
   </footer>
@@ -63,4 +70,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
