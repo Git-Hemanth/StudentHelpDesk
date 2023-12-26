@@ -4,67 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Student Help Desk</title>
+  <title>College Help Desk</title>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    
+  <header>
     <div class="logo">
-      <a href='https://postimages.org/' target='_blank'>
-        <img src='https://i.postimg.cc/8PjwrZFr/pic1.jpg' id="log" border='0' alt='logo-300x-300-2'/>
-        
-      </a>
-      <h2>BVC ENGINEERING COLLEGE ODALAREVU (BVCEC)</h2>
+      <img src="https://i.postimg.cc/8PjwrZFr/pic1.jpg" alt="College Logo">
     </div>
-    <ul>
-      <li><a href="#" name="Dashboard" onclick="showDashboard()">Dashboard</a></li>
-      <li><a href="#"  name="Inquire" onclick="showInquire()">Inquire</a></li>
-      <li><a href="#" name="FAQ" onclick="showFAQ()">FAQs</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+        <li><a href="#faqs" onclick="showPage('faqs')">FAQ's</a></li>
+        <li><a href="#query" onclick="showPage('query')">Query</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Dashboard -->
-  <div id="dashboard" class="page">
-    <h1>Welcome to Student Help Desk</h1>
-    <p>Here is the place where you could post your doubts and get the solution </p>
-    <button id="writeQueryBtn" onclick="showInquire()">Write a Query</button>
-  </div>
+  <section id="main-content">
+    <div id="home" class="page">
+      <h2>Welcome to Our College</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et efficitur ligula. Integer ut mauris eu velit fermentum tristique. Proin euismod, nibh eget vehicula imperdiet, odio elit rhoncus urna.</p>
+      <button onclick="showPage('query')">Ask a Question</button>
+    </div>
 
-  <!-- Inquire -->
-  <div id="inquire" class="page">
-    <h1>Write Your Query</h1>
-    <form>
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+    <div id="faqs" class="page">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-card">
+        <h3>Question 1?</h3>
+        <p>Answer to question 1.</p>
+      </div>
+      <div class="faq-card">
+        <h3>Question 2?</h3>
+        <p>Answer to question 2.</p>
+      </div>
+      <!-- Add more FAQ cards as needed -->
+    </div>
 
-      <label for="department">Department:</label>
-      <input type="text" id="department" name="department" required>
+    <div id="query" class="page">
+      <h2>Submit Your Query</h2>
+      <form id="query-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
 
-      <label for="rollNumber">Your Roll Number:</label>
-      <input type="text" id="rollNumber" name="rollNumber" required>
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" required>
 
-      <label for="query">Write Your Query:</label>
-      <textarea id="query" name="query" rows="4" required></textarea>
+        <label for="message">Query:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button type="submit">Submit Query</button>
-    </form>
-  </div>
+        <button type="button" onclick="submitQuery()">Submit Query</button>
+      </form>
+    </div>
+  </section>
 
-  <!-- FAQs -->
-  <div id="faqs" class="page">
-    <h1>Frequently Asked Questions</h1>
-    <!-- Add your FAQ content here -->
-  </div>
-
-  <!-- Footer -->
-  <footer class="foot">
-    <div>Contact Information: Your Contact Details</div>
-    <img src="college-blueprint.jpg" alt="College Blueprint">
+  <footer>
+    <p>&copy; 2023 College Help Desk</p>
   </footer>
 
   <script src="script.js"></script>

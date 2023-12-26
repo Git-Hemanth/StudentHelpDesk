@@ -1,22 +1,25 @@
-function showDashboard() {
+function showPage(pageId) {
     hideAllPages();
-    document.getElementById('dashboard').style.display = 'block';
+    document.getElementById(pageId).style.display = 'block';
   }
   
-  function showInquire() {
-    hideAllPages();
-    document.getElementById('inquire').style.display = 'block';
-  }
+  function submitQuery() {
+    // Implement your query submission logic here
+    // For this example, let's just show a success message
   
-  function showFAQ() {
-    hideAllPages();
-    document.getElementById('faqs').style.display = 'block';
+    const responseDiv = document.createElement('div');
+    responseDiv.innerHTML = '<p>Query submitted successfully!</p>';
+    responseDiv.style.color = '#4CAF50'; // Green color
+  
+    const queryForm = document.getElementById('query-form');
+    queryForm.parentNode.replaceChild(responseDiv, queryForm);
   }
   
   function hideAllPages() {
-    var pages = document.querySelectorAll('.page');
-    pages.forEach(function (page) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
       page.style.display = 'none';
     });
   }
+  
   
