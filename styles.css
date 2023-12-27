@@ -12,6 +12,8 @@ header {
   align-items: center;
   padding: 1em;
   width:100%;
+  text-align:center;
+  flex-basis:100%;
 
 }
 
@@ -34,7 +36,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   margin:0 20px;
-  position:relative;
+  position:static;
 }
 nav ul li::after{
   content: "";
