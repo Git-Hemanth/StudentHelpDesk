@@ -195,12 +195,6 @@ button {
   margin-top: 1em; /* Added margin-top for spacing */
 }
 
-/* ... (unchanged code) ... */
-@media only screen and (max-width: 600px) {
-  #main-content {
-    padding: 0.5em;
-  }
-
   button {
     width: 100%;
     margin-right: 0;
