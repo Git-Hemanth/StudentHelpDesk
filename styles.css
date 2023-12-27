@@ -126,20 +126,25 @@ footer {
   }
 }
 
+nav ul li {
+  position: relative;
+}
+
 nav ul li::after {
   content: "";
   height: 3px;
   width: 0;
   background: #ffffff;
   position: absolute;
-  left: 0px;
-  top: 25px;
-  visibility: visible;
+  left: 0;
+  bottom: 0; /* Changed top to bottom */
+  visibility: hidden;
   transition: 0.3s;
 }
 
 nav ul li:hover::after {
   width: 100%;
+  visibility: visible; /* Added visibility for the hover state */
 }
 
 .logo {
