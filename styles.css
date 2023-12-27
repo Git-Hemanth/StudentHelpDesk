@@ -28,7 +28,6 @@ nav ul {
   display: flex;
   font-size: large;
   padding-left:10px;
-  overflowX:hidden;
 }
 
 nav ul li {
