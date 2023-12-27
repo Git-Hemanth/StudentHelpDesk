@@ -12,7 +12,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  width: 100%;
 
 }
 
@@ -68,7 +67,7 @@ nav a:hover {
   max-width: 800px;
   margin: 2em auto;
   padding: 1em;
-  width: 100%;
+ 
  
 }
 
