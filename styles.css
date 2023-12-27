@@ -137,7 +137,7 @@ nav ul li::after {
   background: #ffffff;
   position: absolute;
   left: 0;
-  bottom:20px; /* Changed top to bottom */
+  top:20px; /* Changed top to bottom */
   visibility: hidden;
   transition: 0.3s;
 }
