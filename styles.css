@@ -28,6 +28,7 @@ nav ul {
   list-style: none;
   display: flex;
   font-size: large;
+  padding-left:10px;
 }
 
 nav ul li {
