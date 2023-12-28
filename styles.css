@@ -8,8 +8,8 @@ header {
   background: linear-gradient(to right, rgb(130, 5, 5), black);
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items:center; 
   
 }
 
