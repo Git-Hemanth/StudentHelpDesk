@@ -144,7 +144,7 @@ footer {
     background: #ffffff;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 25px;
     visibility: hidden;
     transition: 0.3s;
   }
