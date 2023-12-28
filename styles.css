@@ -12,11 +12,6 @@ header {
   align-items:center; 
   
 }
-nav ul logo {
-align-items:center;
-  diplay:flex;
-  justify-content:center;
-
 .logo img {
   height: 50px;
   padding-top: 10px;
