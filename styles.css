@@ -22,7 +22,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  flex-basis:58%;
+  flex-basis:78%;
   font-size: large;
   margin: 0;
   padding: 0;
@@ -84,6 +84,7 @@ form {
   display: grid;
   gap: 1em;
   position:relative;
+  top:0;
   
 }
 
