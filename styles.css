@@ -82,6 +82,7 @@ button:hover {
 form {
   display: grid;
   gap: 1em;
+  display:absolute;
 }
 
 label {
