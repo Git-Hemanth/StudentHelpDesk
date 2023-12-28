@@ -22,6 +22,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  flex-basis:58%;
   font-size: large;
   margin: 0;
   padding: 0;
