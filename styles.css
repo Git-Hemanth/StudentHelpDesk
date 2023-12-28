@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, rgb(130, 5, 5) ,black);
+  background: linear-gradient(to right, rgb(130, 5, 5), black);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -23,12 +23,12 @@ nav ul {
   list-style: none;
   display: flex;
   font-size: large;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
   margin-right: 20px;
-  list-style: none;
-
 }
 
 nav a {
@@ -125,31 +125,33 @@ footer {
     background-color: aliceblue;
     transition: 0.2s;
   }
-}
 
-nav ul li {
-  position: relative;
-}
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
 
-nav ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #ffffff;
-  position: absolute;
-  left: 0;
-  top:25px ; /* Changed top to bottom */
-  visibility: hidden;
-  transition: 0.3s;
-}
+  nav ul li {
+    margin: 10px 0;
+    position: relative;
+  }
 
-nav ul li:hover::after {
-  width: 100%;
-  visibility: visible; /* Added visibility for the hover state */
-}
+  nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
 
-.logo {
-  display: flex;
-  justify-content: space-between;
+  nav ul li:hover::after {
+    width: 100%;
+    visibility: visible;
+  }
 }
 
