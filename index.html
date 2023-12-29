@@ -1,80 +1,100 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>BVC College Help Desk</title>
+  <script src="script.js"></script>
+  <title>Student Help Desk</title>
 </head>
 <body>
-
-  <header>
-    <div class="logo">
-      <img src="https://i.postimg.cc/8PjwrZFr/pic1.jpg" alt="College Logo">
-      <h2>BVC ENGINEERING COLLEGE ODALAREVU</h2>
-    </div>
-    <nav>
+  <nav>
+    <div class="navdiv">
+      <div class="logo">
+        <a href="#">
+          <img class="img" src="https://i.ibb.co/H4mVSYY/Picture1.jpg" alt="Picture1">
+        </a>
+        <h1 class="name">BONAM VENKATA CHALAMAYYA ENGINEERING COLLEGE ODALAREVU(BVCEC)</h1>
+      </div>
+      
       <ul>
-        <li><a href="#home" onclick="showPage('home')">Home</a></li>
-        <li><a href="#faqs" onclick="showPage('faqs')">FAQ's</a></li>
-        <li><a href="#query" onclick="showPage('query')">Query</a></li>
+        <li><button id="Home" onclick="showHome()">HOME</button></li>
+        <li><button id="FAQ" onclick="toggleFAQ()">FAQ</button></li>
+        <li><button id="QUERY" onclick="showQueryForm()">QUERY</button></li>
+        <li><button id="CONTACT" onclick="openContactModal()">CONTACT</button></li>     
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <section id="main-content">
-    <div id="home" class="page">
-      <h2>Welcome to Our College</h2>
-      <p>Welcome to BVC Engineering College (Autonomous)
-        BVC Group of Institutions is led by our visionary founder, Sri Bonam Kanakayya, son of late Sri Bonam Venkata Chalamayya, a philanthropist & strong enforcer of the adage “Toil, result will come to you. Built around the ancient scholastic concept of Gurukulam, making it a picturesque learning environment for students and teachers.
-        
-        The Group has colleges located in BVCITS Amalapuram, BVCEC Odalarevu & BVCR Rajahmundry. The campuses are eco-friendly, well lit & ventilated, secure and most importantly, conducive to learning.
-        
-        Armed with proficient & accomplished faculty members, state of the art learning centres and a wide range of Programs & courses, par excellence. We are approved by AICTE, New Delhi.</p>
-      <button onclick="showPage('query')">Ask a Question</button>
+  <div class="ho" id="homeContent">
+    <!-- Default home page content -->
+    <h1>BVC Engineering College (Autonomous)</h1>
+    <p>BVC Group of Institutions is led by our visionary founder, Sri Bonam Kanakayya, son of late Sri Bonam Venkata Chalamayya, a philanthropist & strong enforcer of the adage “Toil, result will come to you. Built around the ancient scholastic concept of Gurukulam, making it a picturesque learning environment for students and teachers.</p>
+    <p>The Group has colleges located in BVCITS Amalapuram, BVCEC Odalarevu & BVCR Rajahmundry. The campuses are eco-friendly, well-lit & ventilated, secure and most importantly, conducive to learning. Armed with proficient & accomplished faculty members, state-of-the-art learning centers and a wide range of Programs & courses, par excellence. We are approved by AICTE, New Delhi.</p>
+    
+    <!-- Button to redirect to the query page -->
+    <button type="button" id="GotoQueryPage" onclick="showQueryForm()">Go to Query Page</button>
+  </div>
+
+  <div id="queryForm">
+    <h2>Query Form</h2>
+    <form id="userQueryForm" onsubmit="return submitQuery()">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required> <br><br>
+
+      <label for="rollNo">Roll No:</label>
+      <input type="text" id="rollNo" name="rollNo" required><br><br>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" required><br><br>
+
+      <label for="queryMessage">Write Query here:</label>
+      <textarea id="queryMessage" name="queryMessage" rows="4" required></textarea><br><br>
+
+      <button type="submit" id="submitQuerybtn">Submit Query</button>
+    </form>
+  </div>
+
+  <!-- FAQ Section -->
+  <div id="faqSection" style="display: none;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faqCard" onclick="toggleAnswer(this)">
+      <h3>Q: What is the purpose of this website?</h3>
+      <p class="answer">A: The purpose of this website is to provide information and assistance to students of BVC Engineering College.</p>
     </div>
 
-    <div id="faqs" class="page">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-card">
-        <h3>Question 1?</h3>
-        <p>Answer to question 1.</p>
-      </div>
-      <div class="faq-card">
-        <h3>Question 2?</h3>
-        <p>Answer to question 2.</p>
-      </div>
-      <!-- Add more FAQ cards as needed -->
-    </div>
+    <!-- Add more FAQ cards as needed -->
+  </div>
 
-    <div id="query" class="page">
-      <h2>Submit Your Query</h2>
-      <form id="query-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeContactModal()">&times;</span>
+      <h2>Contact Developer</h2>
+      <form id="contactForm" onsubmit="submitContactForm()">
+        <label for="name">Your Name:</label>
+        <input type="text" id="contactName" name="contactName" required><br><br>
 
-        <label for="department">Department:</label>
-        <input type="text" id="department" name="department" required>
+        <label for="message">Dev Suggestion:</label>
+        <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea><br><br>
 
-        <label for="rollNumber">Roll Number:</label>
-        <input type="text" id="rollNumber" name="rollNumber" required>
-
-        <label for="message">Query:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <div class="button-container">
-          <button type="button" onclick="submitQuery()">Submit Query</button>
-        </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
-  </section>
+  </div>
+
+  <div id="successMessage" style="display: none;">
+    <p>Query successfully submitted!</p>
+  </div>
 
   <footer>
-    <p>&copy; 2023 College Help Desk</p>
+    <div class="foot">
+      <h5>&copy;2023 Student Help Desk</h5>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
 
