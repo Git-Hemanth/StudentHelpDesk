@@ -8,6 +8,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* styles.css */
+
+/* Existing styles... */
+
+/* Add the following styles for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .navdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust other styles as needed for mobile layout */
+}
+
 .navdiv {
   background: linear-gradient(to right, maroon, black);
   display: flex;
