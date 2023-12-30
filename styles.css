@@ -254,4 +254,7 @@ button {
   font-size: 10px;
   line-height: 1.5;
   background-color:none;
+  font-color:white;
+  font-weight:bolder;
+  text-decoration:none;
 }
