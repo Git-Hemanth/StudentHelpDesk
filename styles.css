@@ -37,7 +37,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .name {
@@ -70,7 +70,8 @@ ul li {
 
 .ho {
   justify-content: center;
-  padding: 20px 0; /* Added padding to the home content */
+  padding: 20px 0; 
+  margin-top:50px; /* Added padding to the home content */
 }
 
 /* Form styles */
@@ -113,12 +114,14 @@ ul li {
     flex-direction: column;
     align-items: center;
   }
+  
   .navbtn {
-    display:none;}
+    display:none;
+  }
 
  }
   .name {
-    font-size: small;
+    font-size:large;
   }
 
   .img {
@@ -129,11 +132,11 @@ ul li {
   }
 
   ul li {
-    margin-right: 5px;
+    margin-right: 15px;
   }
 
   #queryForm {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   #submitQuerybtn,
