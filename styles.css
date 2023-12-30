@@ -113,6 +113,8 @@ ul li {
     flex-direction: column;
     align-items: center;
   }
+  .ho {
+    margin-top:40px;
  ul{
 display:none;
  }
@@ -132,7 +134,7 @@ display:none;
   }
 
   #queryForm {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   #submitQuerybtn,
