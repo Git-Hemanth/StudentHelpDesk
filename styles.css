@@ -194,7 +194,8 @@ gap: 15px;
 }
 
 .answer {
-  display: none; /* Initially hide the answers */
+  display:flex;
+  justify-content:center;/* Initially hide the answers */
 }
 
 /* ... (your existing styles) ... */
