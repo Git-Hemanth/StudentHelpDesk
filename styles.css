@@ -28,7 +28,7 @@ img {
 }
 
 .navdiv li button {
-  padding: 0px;
+  padding: 30px;
 }
 
 /* Mobile responsiveness */
@@ -253,8 +253,8 @@ button {
   padding: 10px;
   font-size: 10px;
   line-height: 1.5;
-  background-color:red;
-  font-color:none;
+  background-color:none;
+  font-color:white;
   font-weight:bolder;
   text-decoration:none;
 }
