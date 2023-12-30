@@ -11,26 +11,36 @@ img {
 /* styles.css */
 
 /* Existing styles... */
-
-/* Add the following styles for mobile responsiveness */
-
-
-  /* Adjust other styles as needed for mobile layout */
+/* General styling for navigation */
+.navdiv {
+  display: flex;
+  align-items: center;
 }
-/* Add this CSS for mobile responsiveness */
+
+.navdiv ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navdiv li {
+  margin-right: 20px;
+}
+
+.navdiv li button {
+  padding: 10px;
+}
+
+/* Mobile responsiveness */
 @media screen and (max-width: 600px) {
-  .navdiv ul {
-    display: block;
-    text-align: left;
+  .navdiv {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navdiv li {
-    display: block;
+    margin-right: 0;
     margin-bottom: 10px;
-  }
-
-  .navdiv li button {
-    width: 100%;
   }
 }
 
