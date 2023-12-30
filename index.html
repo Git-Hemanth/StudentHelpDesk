@@ -50,7 +50,7 @@
       <input type="text" id="department" name="department" required><br><br>
 
       <label for="queryMessage">Write Query here:</label>
-      <textarea id="queryMessage" name="queryMessage" rows="4" required></textarea><br><br>
+      <textarea id="queryMessage" name="queryMessage" rows="6" cols="16" required></textarea><br><br>
 
       <button type="submit" id="submitQuerybtn">Submit Query</button>
     </form>
@@ -62,7 +62,12 @@
     <div class="faqCard" onclick="toggleAnswer(this)">
       <h3>Q: What is the purpose of this website?</h3>
       <p class="answer">A: The purpose of this website is to provide information and assistance to students of BVC Engineering College.</p>
-    </div>
+       </div>
+       <div class="faqCard" onclick="toggleAnswer(this)">
+        <h3>Q:When will be the 3-1 supply results declared?</h3>
+      <p class="answer">A: The Examinations Head was said it might take a couple of days they are aiming to release on this month end.</p>
+       </div>
+        </div> 
 
     <!-- Add more FAQ cards as needed -->
   </div>
@@ -73,13 +78,13 @@
       <span class="close" onclick="closeContactModal()">&times;</span>
       <h2>Contact Developer</h2>
       <form id="contactForm" onsubmit="submitContactForm()">
-        <label for="name">Your Name:</label>
-        <input type="text" id="contactName" name="contactName" required><br><br>
+        <label for="email">Your Email ID:</label>
+        <input type="email" id="contactName" name="contactName" required><br><br>
 
         <label for="message">Dev Suggestion:</label>
-        <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea><br><br>
+        <textarea id="contactMessage" name="contactMessage" rows="3"  required></textarea><br><br>
 
-        <button type="submit">Submit</button>
+        <button id="cls" type="submit">Submit</button>
       </form>
     </div>
   </div>
@@ -90,7 +95,7 @@
 
   <footer>
     <div class="foot">
-      <h5>&copy;2023 Student Help Desk</h5>
+      <h5>&copy;Student Help Desk-2023<br>Designed by Hemanth Bhargav</h5>
     </div>
   </footer>
 
