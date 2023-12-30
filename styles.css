@@ -119,9 +119,11 @@ ul li {
     display:none;
   }
    
- }
  
+ .name {
+   font-size:23px;
   }
+}
 
   .img {
     height: 50px;
