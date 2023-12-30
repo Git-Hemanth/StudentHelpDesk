@@ -93,7 +93,7 @@ ul li {
 .navdiv li a {
   color:none;
   font-size:large;
-  font-color:aliceblue;
+  font-color:none;
   text-decoration: none;
   font-weight: bold;
 }
