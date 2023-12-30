@@ -1,67 +1,26 @@
-/* Common styles for smaller screens */
-@media only screen and (max-width: 600px) {
-  .name,
-  #submitQuerybtn,
-  #GotoQueryPage,
-  #cls {
-    font-size: small;
-  }
+/* General styles */
 
-  .img {
-    height: 50px;
-    width: 60px;
-    margin-left: 5px;
-    margin-right: 2px;
-  }
-
-  ul li {
-    margin-right: 5px;
-  }
-
-  #queryForm {
-    margin-top: 20px;
-  }
-
-  #submitQuerybtn,
-  #GotoQueryPage,
-  #cls {
-    padding: 8px 14px;
-  }
-
-  .ho {
-    margin-top: 80px;
-    padding: 10px;
-  }
-
-  body {
-    padding: 0 10px;
-  }
-}
-
-/* Default styles */
 body {
   width: 100%;
   left: 0;
   right: 0;
-  padding: 0 20px;
+  padding: 0 20px; /* Adjusted padding for smaller screens */
 }
 
-.navdiv,
-.foot {
+/* Navbar styles */
+
+.navdiv {
   background: linear-gradient(to right, maroon, black);
-  color: aliceblue;
+  display: flex;
   position: fixed;
   left: 0;
   right: 0;
-  display: flex;
-  width: 100%;
-}
-
-.navdiv {
-  height: 90px;
+  top: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  width: 100%;
+  height: 90px;
+  padding: 0 20px; /* Adjusted padding for smaller screens */
 }
 
 .logo {
@@ -75,12 +34,16 @@ body {
 
 ul li {
   display: inline-block;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   margin-right: 20px;
 }
 
 .name {
   margin-right: 2px;
+  color: aliceblue;
+  margin-left: 0px;
   font-size: large;
 }
 
@@ -92,26 +55,33 @@ ul li {
 }
 
 .foot {
+  background: linear-gradient(to right, maroon, black);
+  color: aliceblue;
+  font-weight: bold;
   justify-content: center;
+  position: fixed;
   bottom: 0;
+  left: 0;
   display: flex;
+  width: 100%;
   margin-right: 15px;
-  padding: 10px 0;
+  padding: 10px 0; /* Added padding to the footer */
 }
 
 .ho {
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0; /* Added padding to the home content */
 }
+
+/* Form styles */
 
 #queryForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 80px;
-  margin-top: 60px;
-  text-align: center;
   padding: 20px;
+  margin-top: 30px; /* Adjusted margin for smaller screens */
+  text-align: center;
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -136,22 +106,51 @@ ul li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Additional styles for smaller screens */
+/* Additional responsiveness adjustments */
+
 @media only screen and (max-width: 600px) {
-  #queryForm {
-    max-width: 100%;
+  .navdiv {
+    flex-direction: column;
+    align-items: center;
   }
 
-  #GoToQueryPage {
-    width: 80%;
+  .name {
+    font-size: small;
+  }
+
+  .img {
+    height: 50px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 2px;
+  }
+
+  ul li {
+    margin-right: 5px;
+  }
+
+  #queryForm {
+    margin-top: 20px;
+  }
+
+  #submitQuerybtn,
+  #GotoQueryPage,
+  #cls {
+    font-size: small;
+    padding: 8px 14px;
+  }
+
+  #successMessage {
+    padding: 10px; /* Adjusted padding for smaller screens */
   }
 }
 
-/* FAQ Section */
-#faqSection,
-.faqCard {
+/* FAQ Section styles */
+
+#faqSection {
   display: none;
-  text-align: center;
+  text-align: center; /* Center the content */
+  padding: 20px;
 }
 
 .faqCard {
@@ -161,8 +160,8 @@ ul li {
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 400px; /* Set a maximum width for the cards */
+  margin: 0 auto; /* Center the cards horizontally */
 }
 
 .faqCard h3 {
@@ -171,16 +170,17 @@ ul li {
 }
 
 .answer {
-  display: flex;
+  display: flex; /* Initially hide the answers */
 }
 
 /* Contact modal styles */
+
 .modal {
   display: none;
   position: fixed;
   top: 0;
-  right: 0;
-  width: 300px;
+  right: 0; /* Adjust this value to move the modal horizontally */
+  width: 300px; /* Set the desired width */
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -191,7 +191,7 @@ ul li {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 80%; /* Set the desired width */
 }
 
 .close {
@@ -208,12 +208,7 @@ ul li {
   cursor: pointer;
 }
 
-/* Responsive font size adjustment */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-}
+/* Button styles */
 
 button {
   padding: 10px;
@@ -222,32 +217,31 @@ button {
   font-size: 13px;
   line-height: 1.5;
   background-color: transparent;
-  border: none;
-  outline: none;
-  box-shadow: none;
+  border: none; /* Remove border */
+  outline: none; /* Remove the default focus outline */
+  box-shadow: none; /* Remove box shadow */
 }
 
 button:hover {
   cursor: pointer;
 }
 
-/* Common styles for buttons */
 #submitQuerybtn,
 #GotoQueryPage,
 #cls {
-  padding: 9px 16px;
-  font-size: 13px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 9px 16px; /* Adjust padding as needed */
+  font-size: 13px; /* Adjust font size as needed */
+  background-color: #8a192d; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 3px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 #submitQuerybtn:hover,
 #submitQuerybtn:focus,
 #GotoQueryPage:hover,
-#GotoQueryPage:focus,
-#cls:hover,
-#cls:focus {
-  background-color: #8a192d;
+#GotoQueryPage:focus {
+  background-color: #8a192d; /* Darker background color on hover/focus */
 }
