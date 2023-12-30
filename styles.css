@@ -44,7 +44,7 @@ ul li {
   margin-right: 2px;
   color: aliceblue;
   margin-left: 0px;
-  font-size: large;
+  font-size: larger;
 }
 
 .img {
@@ -120,8 +120,7 @@ ul li {
   }
 
  }
-  .name {
-    font-size:large;
+ 
   }
 
   .img {
