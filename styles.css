@@ -113,10 +113,9 @@ ul li {
     flex-direction: column;
     align-items: center;
   }
-  .ho {
-    margin-top:40px;
- ul{
-display:none;
+  .navbtn {
+    display:none;}
+
  }
   .name {
     font-size: small;
