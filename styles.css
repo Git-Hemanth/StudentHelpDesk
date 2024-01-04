@@ -71,7 +71,7 @@ ul li {
 .ho {
   justify-content: center;
   padding: 20px 0; 
-  margin-top:50px; /* Added padding to the home content */
+  margin-top:60px; /* Added padding to the home content */
 }
 
 /* Form styles */
@@ -81,7 +81,7 @@ ul li {
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  margin-top: 50px; /* Adjusted margin for smaller screens */
+  margin-top: 60px; /* Adjusted margin for smaller screens */
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 10px;
