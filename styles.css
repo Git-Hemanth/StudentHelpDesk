@@ -82,7 +82,7 @@ ul li {
   align-items: flex-start;
   padding: 20px;
   margin-top: 65px; /* Adjusted margin for smaller screens */
-  text-align: center;
+  text-align: justify;
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
