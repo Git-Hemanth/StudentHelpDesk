@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #fcfcfc;
+    --second-bg-color: #f8f8f8;
+    --text-color: black;
+    --main-color: #c7340f;
+} 
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+} 
+
+body {
+    top:1rem;
+    display: flex;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.6rem 4%;
+    background: rgb(249, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+   /* background-color: transparent;*/
+    border-bottom: 1px solid #51425b;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #6D597A;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+header:hover::before {
+    transform: scaleY(1);
+}
+
+.header .navbar a:hover {
+    color: rgb(247, 246, 246);
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+span {
+    color: var(--main-color);
+}
+label{
+    font-size: 1.2rem;
+}
+.navbar a {
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 3rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+h3 {
+    line-height: 20px;
+    font-size: larger;
+    margin-bottom: 2vw;
+}
+
+.img {
+    margin: 0;
+    height: 60px;
+    width: 80px;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: var(--main-color);
+    }
+    50% {
+        opacity: 0;
+        color: var(--main-color);
+    }
+    100% {
+        opacity: 1;
+        color: var(--main-color);
+    }
+}
+
+body {
+    padding:2rem 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+   
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: var(--main-color);
+    }
+    50% {
+        opacity: 0;
+        color: var(--main-color);
+    }
+    100% {
+        opacity: 1;
+        color: var(--main-color);
+    }
+}
+.decoration{
+    animation: blink 2s infinite;
+    
+}
+
+.home{
+    font-size: 16px;
+    margin: 3rem auto;
+    align-items: center;
+    text-align: center;
+    padding:40px 20px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.home-content{
+    padding: 5.4rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 2rem;
+}
+button{
+    text-align: center;
+    align-items: center;
+    margin-right: 10rem;
+    justify-content: center;
+    border:2px solid red;
+    color:red;
+    background-color: white;
+    margin:0.7rem;
+    padding:0.7rem;
+    border-radius: 4px;
+    
+}
+button:hover{
+    background-color: red;
+    transition: 0.5s;
+    cursor:pointer;
+    color:white;
+}
+.Query-content input,
+  .Query-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #db3232;
+    border-radius: 4px;
+    resize: none;
+  }
+  label{
+    font-size:1.5rem
+  }
+  .notices{
+    background-color: #9c4c39;
+    width: 100vw;
+  }
+  .notice-card {
+    width:100%;
+    align-items: center;
+    margin: 40px auto;
+    padding: 70px;
+    border: 1px solid #e6e4e4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.notices h2 {
+    font-size: 2.5rem;
+    padding-top:10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px; /* Add padding to create space between text and underline */
+    /*border-bottom: 2px solid var(--main-color); /* Underline style */
+}
+
+
+.notice-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.58);
+}
+
+.notice {
+    /* Your existing styles for notice content */
+}
+
+/* Your existing styles for blinking effect */
+.faq {
+    background-color: #2d3a4b; /* Change the color as needed */
+    width: 100vw;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white; /* Adjust text color */
+}
+
+.faq-card {
+    width: 80%; /* Adjust the width as needed */
+    margin: 40px auto;
+    padding: 70px;
+    border: 1px solid #e6e4e4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.58);
+}
+
+.faq-content {
+    /* Your existing styles for FAQ content */
+}
+
+/* Your existing styles for blinking effect */
+.footer{
+    position: relative;
+    bottom:0;
+    width:100%;
+    padding:40px 0;
+    background-color:var(--main--color);
+}
+.footer ul{
+    margin-top: 0;
+    padding:0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom:0;
+    text-align:center;
+
+}
+.footer ul li a{
+    color:rgb(16, 15, 15);
+    border-bottom:3px solid transparent;
+    transition:0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom:3px solid rgb(26, 23, 23);
+}
+.footer ul li{
+display: inline-block;
+padding:0 15px;
+}
+.footer .copyright{
+    margin-top :20px;
+    text-align: center;
+    font-size: 15px;
+    color:rgb(6, 3, 3);
+   
+}
+
+/* Keep your existing CSS */
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens (tablets) */
+
+    .header {
+        padding: 1rem 2%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar */
+        flex-direction: column;
+        align-items: center;
+        background: var(--header-bg);
+        position: absolute;
+        width: 100%;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller screens (phones) */
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content {
+        padding: 2.4rem;
+    }
+
+    .notices h2,
+    .faq h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .notice-card,
+    .faq-card {
+        width: 90%;
+    }
+
+    .Query-content input,
+    .Query-content textarea {
+        font-size: 1rem;
+    }
+}
