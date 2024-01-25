@@ -336,8 +336,8 @@ padding:0 15px;
 @media only screen and (max-width: 768px) {
     /* Adjustments for smaller screens (tablets) */
      .home-content{
-          font-size:15px;
-         padding:auto;
+          font-size:10px;
+         padding:auto 0;
      }
     .header {
         padding: 1rem 2%;
