@@ -24,6 +24,7 @@ html {
 } 
 
 body {
+    margin-top:5rem;
     top:1rem;
     display: flex;
     background: var(--bg-color);
